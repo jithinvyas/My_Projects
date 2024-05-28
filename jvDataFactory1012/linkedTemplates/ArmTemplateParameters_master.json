@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "jvDataFactory1012"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=jvserver.database.windows.net;Initial Catalog=jvdatabase;User ID=jithinvyas"
+		},
+		"LS2_accountKey": {
+			"value": ""
+		},
+		"LS_Adls_Final_accountKey": {
+			"value": ""
+		},
+		"LS_AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"LS_Sqlserver_connectionString": {
+			"value": "Integrated Security=False;Data Source=D101466\\SQL_SERVER;Initial Catalog=EmpData;User ID=sa"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0527-063151-bgb6dkt3"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://jvkeyvault2024.vault.azure.net/"
+		},
+		"DS_AzureDatabricks2_properties_typeProperties_existingClusterId": {
+			"value": "0527-063151-bgb6dkt3"
+		},
+		"LS2_properties_typeProperties_url": {
+			"value": "https://jvstoragepoint.dfs.core.windows.net/"
+		},
+		"LS_Adls_Final_properties_typeProperties_url": {
+			"value": "https://jvstoragepoint.dfs.core.windows.net/"
+		},
+		"LS_AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://jvstoragepoint.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
