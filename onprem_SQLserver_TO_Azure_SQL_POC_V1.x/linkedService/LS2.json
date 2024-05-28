@@ -1,0 +1,12 @@
+{
+	"name": "LS2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://jvstoragepoint.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDIzNzU4MThCLTYwQjgtNDhDQS1CMDE1LUREREIyRDI0MTU4Nl9hNTA5YmU5Zi1lM2UyLTQ1ODctOTI1Yy1iYzU4MWIyMjcyOTUiDQp9"
+		}
+	}
+}

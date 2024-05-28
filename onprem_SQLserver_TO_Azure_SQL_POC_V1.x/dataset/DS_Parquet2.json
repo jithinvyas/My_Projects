@@ -1,0 +1,21 @@
+{
+	"name": "DS_Parquet2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "gold-zone/dbo/",
+				"fileSystem": "jv-container"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

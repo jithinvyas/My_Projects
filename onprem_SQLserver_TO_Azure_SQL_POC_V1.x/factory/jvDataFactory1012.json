@@ -1,0 +1,9 @@
+{
+	"name": "jvDataFactory1012",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6ef2b784-5711-460a-ba1a-eb900228ac9e",
+		"tenantId": "935c1ede-f65b-4bf4-ba4c-57eeb3cb38b6"
+	}
+}

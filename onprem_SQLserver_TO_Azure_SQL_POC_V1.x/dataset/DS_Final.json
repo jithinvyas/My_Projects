@@ -1,0 +1,46 @@
+{
+	"name": "DS_Final",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Adls_Final",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "gold-zone",
+				"fileSystem": "jv-container"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "INT32"
+			},
+			{
+				"name": "EName",
+				"type": "UTF8"
+			},
+			{
+				"name": "Age",
+				"type": "INT32"
+			},
+			{
+				"name": "pinCode",
+				"type": "INT32"
+			},
+			{
+				"name": "RepMgrID",
+				"type": "INT32"
+			},
+			{
+				"name": "salary",
+				"type": "DOUBLE"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

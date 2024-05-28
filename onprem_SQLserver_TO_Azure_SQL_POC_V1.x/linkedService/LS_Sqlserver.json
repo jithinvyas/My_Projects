@@ -1,0 +1,23 @@
+{
+	"name": "LS_Sqlserver",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Data Source=D101466\\SQL_SERVER;Initial Catalog=EmpData;User ID=sa",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sql-password"
+			}
+		},
+		"connectVia": {
+			"referenceName": "selfhost-IR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
