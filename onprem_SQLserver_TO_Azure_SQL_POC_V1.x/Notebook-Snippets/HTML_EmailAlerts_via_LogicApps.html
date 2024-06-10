@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 3px solid #000; /* Thick border */
+}
+
+td, th {
+  border: 2px solid black; /* Thin border for cells */
+  text-align: left;
+  padding: 4px; /* Adjusted padding */
+}
+
+th {
+  background-color: #f2f2f2;
+  color: red; /* Color for table header text */
+  border: 2px solid #000; /* Thick border for header cells */
+}
+</style>
+</head>
+<body>
+
+<h2>Pipeline Failure Notification</h2>
+
+<p>A pipeline has failed. Details are provided below:</p>
+
+<table>
+    <tr>
+        <th>Pipeline Name</th>
+        <th>Error Message</th>
+        <th>DataFactoryName</th>
+        <th>Runid</th>
+    </tr>
+    <tr> 
+        <td>@{triggerBody()?['pipeline']}</td> 
+        <td>@{triggerBody()?['Errormessage']}</td> 
+        <td>@{triggerBody()?['DataFactoryName']}</td> 
+        <td>@{triggerBody()?['Runid']}</td> 
+    </tr> 
+</table>
+
+</body> 
+</html>
